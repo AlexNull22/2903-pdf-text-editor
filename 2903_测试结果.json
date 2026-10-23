@@ -1,0 +1,153 @@
+{
+  "项目": "2903_定点文字修改工具",
+  "状态": "通过",
+  "核验时间UTC": "2026-10-23T14:00:46.621419+00:00",
+  "运行方式": "python -B -X utf8；真实临时 PDF、144 DPI 渲染及隐藏 Tk 按钮",
+  "测试总数": 27,
+  "通过数量": 27,
+  "失败数量": 0,
+  "错误数量": 0,
+  "跳过数量": 0,
+  "耗时秒": 4.241,
+  "测试明细": [
+    {
+      "名称": "test_01_two_page_edits_extract_correctly_and_preserve_source_and_geometry",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_02_independent_pixel_check_preserves_tables_vectors_and_entire_third_page",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_03_all_six_audit_images_match_independently_rendered_pages",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_04_two_independent_targets_on_same_page_keep_fonts_sizes_and_origins",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_05_shorter_replacement_is_not_auto_scaled_or_padded",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_06_replacement_too_wide_is_rejected_without_shrinking",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_07_partial_span_missing_text_and_whitespace_are_rejected",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_08_ambiguous_same_page_text_is_rejected_without_guessing",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_09_page_number_scopes_same_text_on_different_pages",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_10_bad_later_edit_rolls_back_entire_plan",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_11_duplicate_target_region_is_rejected",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_12_invalid_plan_shapes_exact_keys_and_page_types_are_rejected",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_13_non_ascii_multiline_empty_unchanged_and_non_text_replacements_rejected",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_14_scanned_page_is_not_treated_as_editable_text",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_15_rotated_and_cropped_pages_are_refused",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_16_embedded_font_is_refused_even_when_text_is_extractable",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_17_overlapping_extractable_text_is_refused",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_18_vector_background_and_image_under_target_are_refused",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_19_form_annotation_link_and_signature_documents_are_refused",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_20_encrypted_and_corrupt_pdf_are_refused",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_21_existing_output_empty_or_populated_is_never_overwritten",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_22_junction_or_symlink_ancestors_are_refused",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_23_failed_visual_verification_removes_staged_output",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_24_demo_is_flat_complete_and_preserves_untouched_page",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_25_real_tk_button_previews_both_pages_and_clears_stale_success_on_error",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_26_real_tk_preview_failure_preserves_verified_success_and_output",
+      "状态": "通过"
+    },
+    {
+      "名称": "test_27_first_pixel_beyond_right_and_bottom_mask_edges_must_fail_verification",
+      "状态": "通过"
+    }
+  ],
+  "环境": {
+    "Python": "3.12.14",
+    "平台": "Windows-11-10.0.26200-SP0",
+    "PyMuPDF": "1.26.7",
+    "Pillow": "12.3.0",
+    "ReportLab": "4.4.9",
+    "pypdf": "6.10.0",
+    "Tk": "8.6"
+  },
+  "关键覆盖": [
+    "三页原稿两处修改与整页尺寸、未修改文字保持",
+    "原稿 SHA256 不变、结果 SHA256 与报告一致",
+    "独立渲染及六张核验 PNG、目标框外像素变化为零",
+    "非法及过宽计划、重复或歧义 span、部分 span、嵌入字体、扫描、旋转与裁剪拒绝",
+    "文字交叠、矢量/图片背景、表单/签名/批注/链接、损坏及加密 PDF 拒绝",
+    "真实 AES256 仅所有者密码且用户密码为空的加密 PDF 拒绝",
+    "真实 Windows 目录连接点拒绝、已有输出保护、失败不留暂存目录",
+    "视觉核验故障注入，以及右/下边界外第一像素注入均拒绝发布",
+    "真实 Tk 成功/翻页/重复输出状态，以及预览失败仍保留已核验成功"
+  ],
+  "未更改正式演示PDF": true,
+  "正式演示PDF_SHA256": {
+    "2903_工程记录原稿.pdf": "1561c1081e69d44ad1253ffab681f556672fc41f71d74d3b756d7f9e05d33082",
+    "2903_修改结果.pdf": "df2ddba209ab61e8c57a7a79f5cadd4e7d02a54841f7358885e326630cb7a9f7"
+  },
+  "代码SHA256": {
+    "2903_修改引擎.py": "d625869380e2f420c0d748f32205212a0285b9fef70e00a8b60382866f86be9e",
+    "2903_桌面工具.py": "1ee53114e327e52d9243ae5490706706839a31e4306844caf715f94be4ea8fd8",
+    "2903_演示数据.py": "3557fc2ee1297306067fc206f9b79b2802c3efb43a6d8d394879b28b68896c27",
+    "2903_验收测试.py": "3d539ef90a80e5d1815b6b628619debc50d48d8b50dbfd527fc25fcee8009761"
+  }
+}

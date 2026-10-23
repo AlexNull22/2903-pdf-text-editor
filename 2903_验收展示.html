@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" translate="no" class="notranslate"><meta charset="utf-8"><meta name="google" content="notranslate"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2903 · PDF 定点修改验收</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#edf3f3;color:#153743;font:16px Arial,sans-serif}.wrap{max-width:1510px;margin:auto;padding:30px 44px}.top{display:flex;justify-content:space-between;align-items:center}.tag{font-size:13px;letter-spacing:3px;color:#047c79;font-weight:bold}nav a{color:#22616a;margin-left:22px;text-decoration:none}h1{font-size:40px;letter-spacing:-1.5px;margin:13px 0 8px}p{margin:0;color:#526a73;line-height:1.5}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:24px 0}.metric{background:#fff;border:1px solid #d6e3e4;border-radius:10px;padding:14px 20px}.metric b{display:block;font-size:29px;margin-bottom:5px}.metric span{font-size:13px;color:#526a73}.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.card{background:white;border:1px solid #d1e0e2;border-radius:12px;overflow:hidden}.head{padding:15px 22px;display:flex;justify-content:space-between;border-bottom:1px solid #e2ecec}.head b{font-size:16px}.head code{font-size:15px;color:#087b7a}.crop{height:392px;overflow:hidden}.crop img{display:block;width:100%}.foot{display:flex;justify-content:space-between;padding-top:20px;font-size:13px;color:#46656d}.evidence{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}.evidence .card{padding:24px}table{width:100%;border-collapse:collapse;margin-top:26px}th,td{text-align:left;padding:16px 10px;border-bottom:1px solid #dfe9e9;font-size:15px}th{font-size:12px;color:#526a73}td:last-child{color:#087b68;font-weight:bold}.note{font-size:13px;margin-top:25px;line-height:1.8}.controls{display:flex;gap:14px;margin-top:12px;justify-content:center}.controls img{width:205px;height:auto;border:1px solid #d6e3e4}.status{display:inline-block;padding:6px 12px;border-radius:5px;background:#def4e9;color:#176b4b;font-size:13px;margin-top:14px}.hash{font:12px monospace;word-break:break-all;color:#56727a;margin-top:20px}section[hidden]{display:none}
+.wrap{padding:20px 28px}h1{font-size:32px;margin:8px 0}.metrics{margin:18px 0}.metric{padding:12px 18px}.metric b{font-size:26px}.crop{height:clamp(210px,calc(100vh - 330px),392px)}.foot{padding-top:12px;font-size:11px}.evidence .card{padding:18px}.evidence table{margin-top:16px}.evidence td,.evidence th{padding:9px 8px}.evidence .note{margin-top:15px;font-size:12px}.evidence .hash{margin-top:12px;font-size:10px}.controls img{width:auto;max-width:48%;height:clamp(210px,calc(100vh - 290px),350px)}
+</style>
+<div class="wrap">
+ <div class="top"><div class="tag">2903 / INDEPENDENT DEMO</div><nav><a href="?view=before">Before / After</a><a href="?view=evidence">Verification</a></nav></div>
+ <h1 id="title">Independent PDF Text Replacement Demo</h1>
+ <p>Self-made 3-page records, 2 spans edited, 144 DPI outside-box pixel check</p>
+ <div class="metrics"><div class="metric"><b>3</b><span>Page</span></div><div class="metric"><b>2</b><span>Edits</span></div><div class="metric"><b>27 / 27</b><span>Checks · unittest</span></div><div class="metric"><b>0</b><span>Outside 2 pt expanded box · pixels</span></div></div>
+ <section id="before"><div class="grid">
+  <div class="card"><div class="head"><b>Before · Page 1</b><code>RUN-2026-A</code></div><div class="crop"><img src="2903_原稿第1页.png" alt="原稿第一页实际渲染，上半页裁切"></div></div>
+  <div class="card"><div class="head"><b>After · Page 1</b><code>RUN-2026-B</code></div><div class="crop"><img src="2903_结果第1页.png" alt="修改后第一页实际渲染，上半页裁切"></div></div>
+ </div></section>
+ <section id="evidence" hidden><div class="evidence">
+  <div class="card"><b>Independent Demo Verification</b>
+   <table><thead><tr><th>Page</th><th>MuPDF Δ pixels</th><th>Poppler Δ pixels</th><th>Outside box</th></tr></thead><tbody><tr><td>1</td><td>337</td><td>1124</td><td>0</td></tr><tr><td>2</td><td>884</td><td>1223</td><td>0</td></tr><tr><td>3</td><td>0</td><td>0</td><td>0</td></tr></tbody></table>
+   <p class="note">144 DPI · RGB · MuPDF 1.26.7 / Poppler 26.07.0<br>pypdf · source SHA-256 · 27 unittest checks</p>
+   <div class="status">0 pixel change · Outside 2 pt expanded box</div>
+   <div class="hash">SHA-256 / source<br>1561c1081e69d44ad1253ffab681f556672fc41f71d74d3b756d7f9e05d33082</div>
+  </div>
+  <div class="card"><b>Control page · Page 3</b><div class="controls"><img src="2903_原稿第3页.png" alt="未修改控制页原稿"><img src="2903_结果第3页.png" alt="未修改控制页结果"></div><div class="status">0 pixel change</div></div>
+ </div></section>
+ <div class="foot"><span>Restricted ASCII, white background, built-in fonts, local files only, no Drive.</span><span>Self-made records · actual PDF renders</span></div>
+</div>
+<script>if(new URLSearchParams(location.search).get('view')==='evidence'){document.querySelector('#before').hidden=true;document.querySelector('#evidence').hidden=false;document.querySelector('.metrics').hidden=true;document.querySelector('.metrics').style.display='none';document.querySelector('#evidence').style.marginTop='22px';document.querySelector('#title').textContent='Independent Demo Verification'}</script>
+</html>

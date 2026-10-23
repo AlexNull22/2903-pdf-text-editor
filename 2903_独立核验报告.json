@@ -1,0 +1,37 @@
+{
+  "independent_verification": true,
+  "renderer": "pdftoppm version 26.07.0",
+  "text_reader": "pypdf",
+  "rendering_dpi": 144,
+  "pages": 3,
+  "edits": 2,
+  "all_text_lines_verified": true,
+  "all_page_dimensions_unchanged": true,
+  "outside_changed_pixels": 0,
+  "unmodified_page_pixels_identical": true,
+  "source_sha256": "1561c1081e69d44ad1253ffab681f556672fc41f71d74d3b756d7f9e05d33082",
+  "output_sha256": "df2ddba209ab61e8c57a7a79f5cadd4e7d02a54841f7358885e326630cb7a9f7",
+  "page_checks": [
+    {
+      "page": 1,
+      "width": 1224,
+      "height": 1584,
+      "changed_pixels": 1124,
+      "outside_changed_pixels": 0
+    },
+    {
+      "page": 2,
+      "width": 1224,
+      "height": 1584,
+      "changed_pixels": 1223,
+      "outside_changed_pixels": 0
+    },
+    {
+      "page": 3,
+      "width": 1224,
+      "height": 1584,
+      "changed_pixels": 0,
+      "outside_changed_pixels": 0
+    }
+  ]
+}

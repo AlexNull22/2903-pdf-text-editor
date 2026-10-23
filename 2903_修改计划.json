@@ -1,0 +1,12 @@
+[
+  {
+    "page": 1,
+    "expected_text": "RUN-2026-A",
+    "replacement": "RUN-2026-B"
+  },
+  {
+    "page": 2,
+    "expected_text": "STATUS: PENDING",
+    "replacement": "STATUS: CLEARED"
+  }
+]

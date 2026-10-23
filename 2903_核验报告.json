@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "independent_demo": true,
+  "pages": 3,
+  "edits": [
+    {
+      "page": 1,
+      "expected_text": "RUN-2026-A",
+      "replacement": "RUN-2026-B",
+      "bbox": [
+        48.0,
+        141.8000030517578,
+        139.56802368164062,
+        163.78399658203125
+      ],
+      "mask_bbox": [
+        46.0,
+        139.8000030517578,
+        141.56802368164062,
+        165.78399658203125
+      ],
+      "origin": [
+        48.0,
+        159.0
+      ],
+      "font": "Helvetica",
+      "font_alias": "helv",
+      "font_size": 16.0,
+      "color": 1455175,
+      "insertion_color": [
+        0.08627499639987946,
+        0.20392200350761414,
+        0.2784309983253479
+      ]
+    },
+    {
+      "page": 2,
+      "expected_text": "STATUS: PENDING",
+      "replacement": "STATUS: CLEARED",
+      "bbox": [
+        48.0,
+        147.8159942626953,
+        155.99996948242188,
+        162.8040008544922
+      ],
+      "mask_bbox": [
+        46.0,
+        145.8159942626953,
+        157.99996948242188,
+        164.8040008544922
+      ],
+      "origin": [
+        48.0,
+        159.0
+      ],
+      "font": "Courier",
+      "font_alias": "cour",
+      "font_size": 12.0,
+      "color": 1455175,
+      "insertion_color": [
+        0.08627499639987946,
+        0.20392200350761414,
+        0.2784309983253479
+      ]
+    }
+  ],
+  "rendering_dpi": 144,
+  "source_file": "2903_工程记录原稿.pdf",
+  "source_sha256": "1561c1081e69d44ad1253ffab681f556672fc41f71d74d3b756d7f9e05d33082",
+  "output_sha256": "df2ddba209ab61e8c57a7a79f5cadd4e7d02a54841f7358885e326630cb7a9f7",
+  "page_checks": [
+    {
+      "page": 1,
+      "width": 1224,
+      "height": 1584,
+      "changed_pixels": 337,
+      "outside_changed_pixels": 0
+    },
+    {
+      "page": 2,
+      "width": 1224,
+      "height": 1584,
+      "changed_pixels": 884,
+      "outside_changed_pixels": 0
+    },
+    {
+      "page": 3,
+      "width": 1224,
+      "height": 1584,
+      "changed_pixels": 0,
+      "outside_changed_pixels": 0
+    }
+  ],
+  "all_outside_pixels_unchanged": true,
+  "source_unchanged": true,
+  "drive_live_integration_configured": false,
+  "pymupdf_version": "1.26.7",
+  "elapsed_seconds": 0.266
+}
